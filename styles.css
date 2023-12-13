@@ -149,21 +149,40 @@
   grid-template-columns: 50% 50%;
 }
 
-.projects-card, .announcments-card {
+
+.projects-card {
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+}
+
+.projects-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: rgb(209, 180, 52);
+  border-radius: 5px 0 0 5px;
 }
 
 .card-title {
-  background-color: yellow;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .card-content{
   display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.announcments, .trending {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin:10px;
 }
