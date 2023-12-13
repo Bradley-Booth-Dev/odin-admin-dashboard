@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template-columns: 15% 85%;
-  grid-template-rows: 17% 83%;
+  grid-template-rows: 20% 80%;
   height: 100vh;
 }
 
@@ -32,7 +32,7 @@
   flex-direction: row;
   align-items: center;
   margin: 10px 25px;
-  padding-right: 5%;
+  padding-right: 3%;
 }
 
 .left {
@@ -134,8 +134,36 @@
   fill: white;
   padding-right: 10px;
 }
+
 .main-content {
   background-color: lightgrey;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
   display: grid;
-  grid-area: 2 / 2 / 3 /3;
+  grid-template-columns: 70% 30%;
+  padding: 40px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.projects-card, .announcments-card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+.card-content{
+  display: flex;
 }
