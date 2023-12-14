@@ -144,18 +144,21 @@
   padding: 40px;
 }
 
-.projects{
+.projects {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-
 .projects-card {
   background-color: white;
-  border: 1px solid black;
   border-radius: 5px;
   margin: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  height: 20vh;
 }
 
 .projects-card::before {
@@ -169,20 +172,28 @@
   border-radius: 5px 0 0 5px;
 }
 
-.card-title {
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.card-content{
+.card-content {
   display: flex;
   justify-content: center;
   margin: 10px;
 }
 
-.announcments, .trending {
+.icon {
+  width: 30px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.announcements,
+.trending {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
-  margin:10px;
+  margin: 10px;
 }
